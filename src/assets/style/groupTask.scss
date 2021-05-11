@@ -1,0 +1,35 @@
+.group-task--container {
+  border: 1px solid;
+  min-width: 1rem;
+  max-width: 19.125rem;
+  min-height: 12rem;
+  max-height: 24rem;
+  border-radius: 0.4rem;
+  &.group-task--pink {
+    background: $bg-pink;
+    border-color: $color-pink;
+  }
+  &.group-task--purple {
+    background: $bg-purple;
+    border-color: $color-purple;
+  }
+  &.group-task--blue {
+    background: $bg-blue;
+    border-color: $color-blue;
+  }
+  &.group-task--green {
+    background: $bg-green;
+    border-color: $color-green;
+  }
+
+  .group-task--timeline {
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: block;
+  }
+}

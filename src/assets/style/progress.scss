@@ -1,0 +1,30 @@
+.progress {
+  &--container {
+    background-color: $bg-gray;
+    position: relative;
+    content: "";
+    height: 0.7rem;
+  }
+
+  // progress colors
+  &--pink {
+    &.progress--fill {
+      background-color: $color-pink;
+    }
+  }
+  &--green {
+    &.progress--fill {
+      background-color: $color-green;
+    }
+  }
+  &--blue {
+    &.progress--fill {
+      background-color: $color-blue;
+    }
+  }
+  &--purple {
+    &.progress--fill {
+      background-color: $color-purple;
+    }
+  }
+}

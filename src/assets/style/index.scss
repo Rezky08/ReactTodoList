@@ -1,0 +1,12 @@
+@import "variable";
+
+@import "text.scss";
+@import "badge.scss";
+@import "groupTask.scss";
+@import "buttonGhostIcon.scss";
+@import "taskCard.scss";
+@import "progress.scss";
+
+.App {
+  padding: 1.5rem 3rem;
+}
