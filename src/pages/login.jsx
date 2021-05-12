@@ -14,6 +14,9 @@ class Login extends React.Component {
     this.handleChangePassword = this.handleChangePassword.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
+  componentDidMount() {
+    this.validateHasToken();
+  }
 
   validateInput() {
     if (this.state.email !== "" && this.state.password !== "") {
@@ -23,6 +26,12 @@ class Login extends React.Component {
     }
   }
 
+  validateHasToken = () => {
+    if (localStorage.getItem("token")) {
+      this.props.history.push("/");
+    }
+  };
+
   handleChangeEmail(event) {
     this.setState({ email: event.target.value });
     this.validateInput();
@@ -31,13 +40,11 @@ class Login extends React.Component {
     this.setState({ password: event.target.value });
     this.validateInput();
   }
-  handleSuccesLogin(response) {
+  handleSuccesLogin = (response) => {
     const { data } = response;
     localStorage.setItem("token", data?.auth_token);
-    if (localStorage.getItem("token")) {
-      this.props.history.push("/");
-    }
-  }
+    this.validateHasToken();
+  };
   async handleFormSubmit(event) {
     event.preventDefault();
     API.post("/auth/login", {
