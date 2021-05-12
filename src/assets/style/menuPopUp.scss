@@ -1,0 +1,47 @@
+.menu-popup {
+  &--container {
+    position: relative;
+    &:focus-visible,
+    &:focus,
+    &:visited,
+    &:active,
+    &:hover {
+      border-radius: 0.225rem;
+      background-color: $bg-gray;
+    }
+  }
+  &--content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    height: fit-content;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    filter: drop-shadow(0px 6px 12px rgba(47, 49, 54, 0.2));
+
+    &-item {
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      height: 2rem;
+
+      &:hover {
+        color: $color-purple-dark;
+        background-color: $bg-purple-dark;
+        svg > * {
+          fill: $color-purple-dark;
+        }
+      }
+    }
+  }
+  &--show {
+    display: block;
+  }
+}

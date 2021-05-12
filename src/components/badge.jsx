@@ -1,6 +1,6 @@
 import React from "react";
 
-class badge extends React.Component {
+class Badge extends React.Component {
   render() {
     return (
       <div className={`badge badge--${this.props.color}`}>
@@ -10,4 +10,4 @@ class badge extends React.Component {
   }
 }
 
-export default badge;
+export default Badge;

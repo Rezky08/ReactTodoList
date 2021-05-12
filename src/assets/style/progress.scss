@@ -6,6 +6,17 @@
     height: 0.7rem;
   }
 
+  &--rate-text {
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: $color-gray;
+  }
+
   // progress colors
   &--pink {
     &.progress--fill {

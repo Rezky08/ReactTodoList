@@ -1,10 +1,5 @@
 .button {
   &-ghost {
-    &:focus-visible,
-    &:focus,
-    &:visited {
-      outline: none;
-    }
     &--icon {
     }
     &--text {

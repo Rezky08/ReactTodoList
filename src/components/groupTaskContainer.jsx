@@ -15,7 +15,7 @@ function Timeline() {
   return null;
 }
 
-class groupTaskContainer extends React.Component {
+class GroupTaskContainer extends React.Component {
   static Badge = Badge;
   static Content = Content;
   static Timeline = Timeline;
@@ -51,7 +51,7 @@ class groupTaskContainer extends React.Component {
   }
 }
 
-groupTaskContainer.Badge = Badge;
-groupTaskContainer.Content = Content;
-groupTaskContainer.Timeline = Timeline;
-export default groupTaskContainer;
+GroupTaskContainer.Badge = Badge;
+GroupTaskContainer.Content = Content;
+GroupTaskContainer.Timeline = Timeline;
+export default GroupTaskContainer;

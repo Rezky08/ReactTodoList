@@ -7,7 +7,7 @@ function Text() {
   return null;
 }
 
-class buttonGhostIcon extends React.Component {
+class ButtonGhostIcon extends React.Component {
   static Icon = Icon;
   static Text = Text;
   render() {
@@ -16,7 +16,7 @@ class buttonGhostIcon extends React.Component {
     const text = children.find((child) => child.type === Text);
     return (
       <button
-        className="button-ghost grid grid-cols-3 gap-2 min-w-min inline-block align-middle"
+        className="button-ghost flex flex-row gap-2 min-w-min inline-block align-middle items-end"
         onClick={this.props.handleClick}
       >
         <span className="button-ghost--icon col-span-1 ">
@@ -30,7 +30,7 @@ class buttonGhostIcon extends React.Component {
   }
 }
 
-buttonGhostIcon.Icon = Icon;
-buttonGhostIcon.Text = Text;
+ButtonGhostIcon.Icon = Icon;
+ButtonGhostIcon.Text = Text;
 
-export default buttonGhostIcon;
+export default ButtonGhostIcon;

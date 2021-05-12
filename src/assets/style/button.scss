@@ -1,0 +1,9 @@
+button {
+  &:focus-visible,
+  &:focus,
+  &:visited,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
